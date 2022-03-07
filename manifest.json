@@ -3,7 +3,7 @@
     "name": "PrayerLife",
     "short_name": "PrayerLife",
     "scope": "/NewPrayerLife/",
-    "start_url": "/NewPrayerLife",
+    "start_url": "/NewPrayerLife/",
     "display": "standalone",
     "icons" : [
         {
