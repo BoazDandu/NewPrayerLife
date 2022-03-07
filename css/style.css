@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+::after,
+::before,
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5db83d3f289e617315968602/1624626876403-9GKUUUNL6I0SENOKJRLR/lightstock_720104_medium_dave.jpg?format=2500w");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    transition: all ease-in-out .2s;
+    justify-items: center;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navmenu-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.navmenu-links:hover {
+    text-decoration: underline;
+    text-underline-offset: 1.3rem;
+}
+
+
+
+.nav-menu-button {
+    display: none;
+    background-color: #000;
+    padding: 5px 8px;
+    border-radius: 4px;
+    position: relative;
+    top: 30vh;
+}
+
+.nav-req-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.logo-text {
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    align-items: center;
+}
+
+.fa-praying-hands {
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+#date {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#openNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    display: none;
+}
+
+.burger  {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    display: flex;
+}
+
+.req-button {
+    display: block;
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    
+}
+
+.req-btn-inline {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.burger::after,
+.burger::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.burger::before {
+    transform: translateY(-8px);
+}
+
+.burger::after {
+    transform: translateY(8px);
+}
+
+#openNav.open .burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+#openNav.open .burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+#openNav.open .burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.intro-content {
+    position: absolute;
+    text-align: center;
+    top: 30vh;
+}
+
+.intro-head {
+    color: #fff;
+    font-size: 84px !important;
+    line-height: 84px !important;
+    letter-spacing: -3.3px !important;
+    font-weight: 900;
+    margin-bottom: 30px;
+    padding: 0px 400px;
+}
+
+.intro-lead {
+    color: #fff;
+    font-size: 20.8px !important;
+    font-weight: normal;
+    line-height: 31.2px !important;
+    margin-bottom: 30px;
+    padding: 0px 350px;
+}
+
+.know-more {
+    margin-top: 5rem;
+}
+
+.knw-more-inline {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 22px;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 1px;
+}
+
+
+@media (max-width: 480px) {
+
+    .header {
+        justify-content: space-between;
+        width: 100%;
+        padding: 13px 20px;
+        flex-direction: row-reverse;
+        
+    }
+
+
+    #openNav {
+        display: flex;
+    }
+
+    .navmenu {
+        position: absolute;
+        flex-direction: column;
+        margin-top: 50px;
+        top: 0%;
+        left: 200%;
+        transform: translate(-50%);
+        background-color: #fff;
+        width: 100%;
+        transition: all .4s ease-in-out;
+        height: 100vh;
+    }
+
+
+    .active-nav {
+        top: 0%;
+        left: 50%;
+        position: absolute;
+    }
+
+    .navmenu-links {
+        padding: 20px 0;
+        color: #000;
+        display: flex;
+        position: relative;
+        top: 20vh;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .logo-text {
+        font-size: 25px;
+    }
+
+    .nav-menu-button{
+        display: block;
+    }
+
+    .req-button {
+        display: none;
+    }
+    
+    .intro-content {
+        top: 30vh;
+        position: absolute;
+        text-align: center;
+    }
+
+    .intro-head {
+        font-size: 42px !important;
+        line-height: 42px !important;
+        font-weight: 700;
+        letter-spacing: -0.5px !important;
+        padding: 0 50px;
+    }
+
+    .intro-lead {
+        font-size: 18px !important;
+        font-weight: normal;
+        line-height: 27.2px !important;
+        padding: 0 20px;
+    }
+
+    .knw-more-inline {
+        font-size: 20px;
+    }
+
+    #date {
+        position: relative;
+        font-size: 16px;
+        right: 250%;
+    }
+}
+
+
+.page-wrapper {
+    min-height: 100vh;
+}
+
+
+
+
+
