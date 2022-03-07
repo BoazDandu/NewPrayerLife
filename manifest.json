@@ -1,0 +1,16 @@
+
+{
+    "name": "PrayerLife",
+    "short_name": "PrayerLife",
+    "start_url": "/?home=true",
+    "icons" : [
+        {
+            "src": "logo.png",
+            "sizes": "144x144"
+        }
+
+
+    ],
+    "display": "fullscreen",
+    "orientation": "portrait"
+}

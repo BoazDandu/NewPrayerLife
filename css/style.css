@@ -215,6 +215,15 @@ body {
     text-decoration-thickness: 1px;
 }
 
+.add-button {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 
 @media (max-width: 475px) {
 
