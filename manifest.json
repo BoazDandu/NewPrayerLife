@@ -2,7 +2,9 @@
 {
     "name": "PrayerLife",
     "short_name": "PrayerLife",
-    "start_url": "http://boazdandu.github.io/NewPrayerLife",
+    "scope": "/NewPrayerLife/",
+    "start_url": "/NewPrayerLife",
+    "display": "standalone",
     "icons" : [
         {
             "src": "logo.png",
@@ -11,6 +13,5 @@
 
 
     ],
-    "display": "fullscreen",
     "orientation": "portrait"
 }

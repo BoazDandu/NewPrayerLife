@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/5a20636ae2.js" crossorigin="anonymous"></script>
     <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://boazdandu.github.io/NewPrayerLife/">
 </head>
 <body>
     <div class="container">
@@ -61,14 +62,11 @@
 
     <script src="js/main.js" type="text/javascript"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js').then(registration => {
-                console.log("SW Registered!");
-                console.log(registration);
-            }).catch(error => {
-                console.log("SW Registration Failed");
-                console.log(error);
-            })
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register (
+                '/NewPrayerLife/service-worker.js',
+                {scope: '/NewPrayerLife/'}
+            )
         }
     </script>
 </body>
