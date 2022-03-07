@@ -15,9 +15,9 @@ function getTime() {
   var minutes = today.getMinutes();
 
   if (hour >= 12) {                 // Adding endings
-    suffix = "P.M";
+    suffix = "PM";
   } else {
-    suffix = "A.M";
+    suffix = "AM";
   }
 
   minutes = addZero(minutes); //Call addZero function
@@ -37,7 +37,7 @@ function getTime() {
 
 setInterval( function() {
   getTime();
-}, 100);
+}, 1000);
 
 const menuBtn = document.querySelector('#openNav');
 let menuOpen = false;
