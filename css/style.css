@@ -60,8 +60,7 @@ body {
 .nav-menu-button {
     display: none;
     background-color: #000;
-    padding: 5px 8px;
-    border-radius: 4px;
+    padding: 10px 8px;
     position: relative;
     top: 30vh;
 }
@@ -69,7 +68,7 @@ body {
 .nav-req-btn {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -139,8 +138,6 @@ body {
     display: block;
     background-color: #fff;
     padding: 5px 8px;
-    border-radius: 4px;
-    
 }
 
 .req-btn-inline {
@@ -234,7 +231,7 @@ body {
     .header {
         justify-content: space-between;
         width: 100%;
-        padding: 15px 20px;
+        padding: 20px 25px;
         flex-direction: row-reverse;
         
     }
@@ -247,7 +244,7 @@ body {
     .navmenu {
         position: absolute;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 60px;
         top: 0%;
         left: 200%;
         transform: translate(-50%);
@@ -270,23 +267,23 @@ body {
         display: flex;
         position: relative;
         top: 20vh;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 30px;
+        font-weight: 600;
     }
     
     .logo {
         position: absolute;
         left: 0%;
-        margin-left: 80px;
+        margin-left: 100px;
     }
 
     .fa-praying-hands {
-        font-size: 20px;
+        font-size: 25px;
     }
     
 
     .logo-text {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .nav-menu-button{
@@ -304,11 +301,11 @@ body {
     }
 
     .intro-head {
-        font-size: 42px !important;
-        line-height: 42px !important;
+        font-size: 48px !important;
+        line-height: 48px !important;
         font-weight: 700;
         letter-spacing: -0.5px !important;
-        padding: 0 50px;
+        padding: 0 10px;
     }
 
     .intro-lead {
@@ -371,7 +368,7 @@ body {
 
 @media (max-width: 480px) {
     .page-wrapper-top {
-        padding: 50px 20px;
+        padding: 50px 10px;
     }
 
     .page-wrapper-bottom {
