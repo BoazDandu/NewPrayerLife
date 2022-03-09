@@ -15,7 +15,7 @@ body {
 
 
 .container {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5db83d3f289e617315968602/1624626876403-9GKUUUNL6I0SENOKJRLR/lightstock_720104_medium_dave.jpg?format=2500w");
+    background-image: url("../img/main-bg.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,8 +107,12 @@ body {
 
 #date {
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.active-secs{
+    display: none;
 }
 
 #openNav {
@@ -310,18 +314,68 @@ body {
 
     #date {
         position: fixed;
-        font-size: 18px;
         left: 0%;
         margin-left: 10px;
     }
 }
 
 
-
-
 .page-wrapper {
     min-height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
+
+.page-wrapper-top {
+    padding: 100px;
+}
+
+.page-wrapper-video-content {
+    width: 100%;
+    height: auto;
+}
+
+.page-wrapper-bottom {
+    padding: 100px;
+}
+
+.page-bottom-head {
+    font-size: 56px !important;
+    line-height: 61.6px !important;
+    letter-spacing: -1.1px !important;
+    font-weight: 800;
+    color: #000;
+}
+
+.page-bottom-text {
+    font-size: 18px !important;
+    line-height: 28.8px !important;
+    font-weight: normal;
+    max-width: 600px;
+    margin-top: 30px;
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    .page-wrapper-top {
+        padding: 50px 20px;
+    }
+
+    .page-wrapper-bottom {
+        padding: 30px;
+    }
+
+    .page-bottom-head {
+        font-size: 42px !important;
+    }
+
+    .page-bottom-text {
+        font-size: 17px !important;
+        line-height: 27.2px !important;
+        margin-top: 10px;
+    }
+}
+
+
 
 
 
