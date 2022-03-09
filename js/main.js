@@ -1,18 +1,20 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
   } else {
-    document.getElementById("header").style.backgroundColor = "transparent";
+    document.getElementById("header").style.backgroundColor = "#000";
   }
 }
-
 
 function getTime() {
   var today = new Date();
   var hour = today.getHours();
   var minutes = today.getMinutes();
+
+ 
+  
 
   if (hour >= 12) {                 // Adding endings
     suffix = "PM";
@@ -22,7 +24,7 @@ function getTime() {
 
   minutes = addZero(minutes); //Call addZero function
 
-  var time = hour + ":" + minutes + " " + suffix; //combine hour minute and the suffix
+  var time = hour + " : " +  minutes + " " + suffix; //combine hour minute and the suffix
   document.getElementById("date").innerHTML = time;
 
   function addZero(number) {

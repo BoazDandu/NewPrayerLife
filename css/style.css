@@ -11,16 +11,15 @@
 
 body {
     font-family: 'Lato', sans-serif;
-}
+}     
 
 
 .container {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5db83d3f289e617315968602/1624626876403-9GKUUUNL6I0SENOKJRLR/lightstock_720104_medium_dave.jpg?format=2500w");
+    background-image: url("https://www.southeastchristian.org/GetImage.ashx?Guid=584b958a-a286-4e13-b1c9-243352a972df");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .header {
@@ -295,17 +294,17 @@ body {
     }
     
     .intro-content {
-        top: 30vh;
+        top: 25vh;
         position: absolute;
         text-align: center;
     }
 
     .intro-head {
-        font-size: 48px !important;
-        line-height: 48px !important;
+        font-size: 56px !important;
+        line-height: 56px !important;
         font-weight: 700;
         letter-spacing: -0.5px !important;
-        padding: 0 10px;
+        padding: 0 54px;
     }
 
     .intro-lead {
@@ -346,10 +345,14 @@ body {
 }
 
 .page-wrapper-bottom {
-    padding: 100px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.page-bottom-head {
+.page-left-head {
     font-size: 56px !important;
     line-height: 61.6px !important;
     letter-spacing: -1.1px !important;
@@ -357,7 +360,7 @@ body {
     color: #000;
 }
 
-.page-bottom-text {
+.page-left-text {
     font-size: 18px !important;
     line-height: 28.8px !important;
     font-weight: normal;
@@ -366,23 +369,46 @@ body {
     color: #000;
 }
 
+.page-wrapper-right {
+    display: none;
+}
+
+.page-right-video-content {
+    width: 500px;
+    height: 500px;
+}
+
 @media (max-width: 480px) {
     .page-wrapper-top {
         padding: 50px 10px;
     }
 
     .page-wrapper-bottom {
-        padding: 30px;
+        flex-direction: column;
+        padding: 10px;
     }
 
-    .page-bottom-head {
+    .page-wrapper-left {
+        padding: 20px;
+    }
+
+    .page-left-head {
         font-size: 42px !important;
     }
 
-    .page-bottom-text {
+    .page-left-text {
         font-size: 17px !important;
         line-height: 27.2px !important;
         margin-top: 10px;
+    }
+
+    .page-wrapper-right {
+        display: flex;
+    }   
+
+    .page-right-video-content {
+        width: 100%;
+        height: auto;
     }
 }
 
